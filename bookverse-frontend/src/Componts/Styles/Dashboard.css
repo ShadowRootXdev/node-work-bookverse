@@ -1,0 +1,159 @@
+.dashboard-container {
+  padding: 2rem;
+  margin-top: 35px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 86vh;
+}
+
+
+h2 {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  color: #2e7d32;
+  font-weight: 600;
+  font-size: 50px;
+  justify-content: center;
+  border: none;
+}
+
+.book-table {
+  width: 70%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-left: 15rem;
+}
+
+.book-table th,
+.book-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.book-table tr:hover {
+  background-color: #f1f8f2;
+  cursor: pointer;
+}
+
+.update-btn,
+.delete-btn {
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.update-btn {
+  background-color: #1976d2;
+  color: white;
+}
+
+.update-btn:hover {
+  background-color: #1565c0;
+}
+
+.delete-btn {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #b71c1c;
+}
+
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+}
+
+.modal-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.modal-buttons .confirm-delete {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.modal-buttons .confirm-delete:hover {
+  background-color: #b71c1c;
+}
+
+.modal-buttons button:not(.confirm-delete) {
+  background-color: #ccc;
+}
+
+.btn-me {
+  margin-top: 19px;
+  padding: 12px 24px;
+  background-color: #0066cc;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 102, 204, 0.2);
+  margin-left: 15rem;
+
+}
+
+.btn-me a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.btn-me:hover {
+  background-color: #004a99;
+  transform: translateY(-2px);
+}
+
+.btn-me:active {
+  transform: scale(0.98);
+}
+
+
+.no-books {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #555;
+}

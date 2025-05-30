@@ -1,0 +1,36 @@
+ *{
+  margin: 0;
+  padding: 0;
+ }
+ .register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  height: 90vh;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.register-form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+.register-form button {
+  padding: 0.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.message {
+  margin-top: 0.5rem;
+  color: green;
+}

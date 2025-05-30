@@ -1,0 +1,80 @@
+/* src/styles/navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  width: 97%;
+  z-index: 1000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #2e7d32;
+}
+
+.navbar-auth {
+  display: flex;
+  align-items: center;
+}
+
+.signin-button {
+  padding: 0.4rem 1rem;
+  background-color: #2e7d32;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.signin-button:hover {
+  background-color: #27662b;
+}
+
+.navbar-username {
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+
+.logout-button {
+  margin-left: 1rem;
+  padding: 6px 12px;
+  background-color: #ff4d4f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  background-color: #d9363e;
+}
